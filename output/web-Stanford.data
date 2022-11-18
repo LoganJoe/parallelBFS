@@ -1,0 +1,299 @@
+Progam start...
+Starting to load edges...
+---------- thread num: 1
+---------- iteration: 0
+---------- iteration: 0, time: 40 ms
+           gMTEPS: 5.451175
+---------- iteration: 1
+---------- iteration: 1, time: 34 ms
+           gMTEPS: 6.413147
+---------- iteration: 2
+---------- iteration: 2, time: 34 ms
+           gMTEPS: 6.413147
+---------- iteration: 3
+---------- iteration: 3, time: 34 ms
+           gMTEPS: 6.413147
+---------- iteration: 4
+---------- iteration: 4, time: 33 ms
+           gMTEPS: 6.607485
+---------- iteration: 5
+---------- iteration: 5, time: 33 ms
+           gMTEPS: 6.607485
+---------- iteration: 6
+---------- iteration: 6, time: 33 ms
+           gMTEPS: 6.607485
+---------- iteration: 7
+---------- iteration: 7, time: 33 ms
+           gMTEPS: 6.607485
+---------- Average time: 34.250000 ms
+---------- file saved with line: 218048 with time 297 ms.
+---------- thread num: 2
+---------- iteration: 0
+---------- iteration: 0, time: 63 ms
+           gMTEPS: 31.270492
+---------- iteration: 1
+---------- iteration: 1, time: 51 ms
+           gMTEPS: 38.628254
+---------- iteration: 2
+---------- iteration: 2, time: 51 ms
+           gMTEPS: 38.628254
+---------- iteration: 3
+---------- iteration: 3, time: 51 ms
+           gMTEPS: 38.628254
+---------- iteration: 4
+---------- iteration: 4, time: 50 ms
+           gMTEPS: 39.400820
+---------- iteration: 5
+---------- iteration: 5, time: 51 ms
+           gMTEPS: 38.628254
+---------- iteration: 6
+---------- iteration: 6, time: 51 ms
+           gMTEPS: 38.628254
+---------- iteration: 7
+---------- iteration: 7, time: 51 ms
+           gMTEPS: 38.628254
+---------- Average time: 52.375000 ms
+---------- file saved with line: 218048 with time 295 ms.
+---------- thread num: 4
+---------- iteration: 0
+---------- iteration: 0, time: 47 ms
+           gMTEPS: 41.915766
+---------- iteration: 1
+---------- iteration: 1, time: 42 ms
+           gMTEPS: 46.905738
+---------- iteration: 2
+---------- iteration: 2, time: 42 ms
+           gMTEPS: 46.905738
+---------- iteration: 3
+---------- iteration: 3, time: 42 ms
+           gMTEPS: 46.905738
+---------- iteration: 4
+---------- iteration: 4, time: 45 ms
+           gMTEPS: 43.778688
+---------- iteration: 5
+---------- iteration: 5, time: 37 ms
+           gMTEPS: 53.244352
+---------- iteration: 6
+---------- iteration: 6, time: 37 ms
+           gMTEPS: 53.244352
+---------- iteration: 7
+---------- iteration: 7, time: 37 ms
+           gMTEPS: 53.244352
+---------- Average time: 41.125000 ms
+---------- file saved with line: 218048 with time 295 ms.
+---------- thread num: 8
+---------- iteration: 0
+---------- iteration: 0, time: 42 ms
+           gMTEPS: 46.905738
+---------- iteration: 1
+---------- iteration: 1, time: 38 ms
+           gMTEPS: 51.843184
+---------- iteration: 2
+---------- iteration: 2, time: 37 ms
+           gMTEPS: 53.244352
+---------- iteration: 3
+---------- iteration: 3, time: 38 ms
+           gMTEPS: 51.843184
+---------- iteration: 4
+---------- iteration: 4, time: 38 ms
+           gMTEPS: 51.843184
+---------- iteration: 5
+---------- iteration: 5, time: 37 ms
+           gMTEPS: 53.244352
+---------- iteration: 6
+---------- iteration: 6, time: 38 ms
+           gMTEPS: 51.843184
+---------- iteration: 7
+---------- iteration: 7, time: 37 ms
+           gMTEPS: 53.244352
+---------- Average time: 38.125000 ms
+---------- file saved with line: 218048 with time 299 ms.
+---------- thread num: 16
+---------- iteration: 0
+---------- iteration: 0, time: 31 ms
+           gMTEPS: 63.549711
+---------- iteration: 1
+---------- iteration: 1, time: 28 ms
+           gMTEPS: 70.358609
+---------- iteration: 2
+---------- iteration: 2, time: 28 ms
+           gMTEPS: 70.358609
+---------- iteration: 3
+---------- iteration: 3, time: 28 ms
+           gMTEPS: 70.358609
+---------- iteration: 4
+---------- iteration: 4, time: 27 ms
+           gMTEPS: 72.964484
+---------- iteration: 5
+---------- iteration: 5, time: 28 ms
+           gMTEPS: 70.358609
+---------- iteration: 6
+---------- iteration: 6, time: 28 ms
+           gMTEPS: 70.358609
+---------- iteration: 7
+---------- iteration: 7, time: 28 ms
+           gMTEPS: 70.358609
+---------- Average time: 28.250000 ms
+---------- file saved with line: 218048 with time 300 ms.
+---------- thread num: 24
+---------- iteration: 0
+---------- iteration: 0, time: 24 ms
+           gMTEPS: 82.085039
+---------- iteration: 1
+---------- iteration: 1, time: 21 ms
+           gMTEPS: 93.811477
+---------- iteration: 2
+---------- iteration: 2, time: 20 ms
+           gMTEPS: 98.502047
+---------- iteration: 3
+---------- iteration: 3, time: 21 ms
+           gMTEPS: 93.811477
+---------- iteration: 4
+---------- iteration: 4, time: 20 ms
+           gMTEPS: 98.502047
+---------- iteration: 5
+---------- iteration: 5, time: 21 ms
+           gMTEPS: 93.811477
+---------- iteration: 6
+---------- iteration: 6, time: 21 ms
+           gMTEPS: 93.811477
+---------- iteration: 7
+---------- iteration: 7, time: 21 ms
+           gMTEPS: 93.811477
+---------- Average time: 21.125000 ms
+---------- file saved with line: 218048 with time 301 ms.
+---------- thread num: 32
+---------- iteration: 0
+---------- iteration: 0, time: 20 ms
+           gMTEPS: 98.502047
+---------- iteration: 1
+---------- iteration: 1, time: 18 ms
+           gMTEPS: 109.446719
+---------- iteration: 2
+---------- iteration: 2, time: 17 ms
+           gMTEPS: 115.884766
+---------- iteration: 3
+---------- iteration: 3, time: 17 ms
+           gMTEPS: 115.884766
+---------- iteration: 4
+---------- iteration: 4, time: 17 ms
+           gMTEPS: 115.884766
+---------- iteration: 5
+---------- iteration: 5, time: 18 ms
+           gMTEPS: 109.446719
+---------- iteration: 6
+---------- iteration: 6, time: 17 ms
+           gMTEPS: 115.884766
+---------- iteration: 7
+---------- iteration: 7, time: 17 ms
+           gMTEPS: 115.884766
+---------- Average time: 17.625000 ms
+---------- file saved with line: 218048 with time 301 ms.
+---------- thread num: 48
+---------- iteration: 0
+---------- iteration: 0, time: 18 ms
+           gMTEPS: 109.446719
+---------- iteration: 1
+---------- iteration: 1, time: 15 ms
+           gMTEPS: 131.336062
+---------- iteration: 2
+---------- iteration: 2, time: 14 ms
+           gMTEPS: 140.717219
+---------- iteration: 3
+---------- iteration: 3, time: 14 ms
+           gMTEPS: 140.717219
+---------- iteration: 4
+---------- iteration: 4, time: 14 ms
+           gMTEPS: 140.717219
+---------- iteration: 5
+---------- iteration: 5, time: 14 ms
+           gMTEPS: 140.717219
+---------- iteration: 6
+---------- iteration: 6, time: 15 ms
+           gMTEPS: 131.336062
+---------- iteration: 7
+---------- iteration: 7, time: 14 ms
+           gMTEPS: 140.717219
+---------- Average time: 14.750000 ms
+---------- file saved with line: 218048 with time 305 ms.
+---------- thread num: 64
+---------- iteration: 0
+---------- iteration: 0, time: 18 ms
+           gMTEPS: 109.446719
+---------- iteration: 1
+---------- iteration: 1, time: 13 ms
+           gMTEPS: 151.541609
+---------- iteration: 2
+---------- iteration: 2, time: 12 ms
+           gMTEPS: 164.170078
+---------- iteration: 3
+---------- iteration: 3, time: 13 ms
+           gMTEPS: 151.541609
+---------- iteration: 4
+---------- iteration: 4, time: 13 ms
+           gMTEPS: 151.541609
+---------- iteration: 5
+---------- iteration: 5, time: 13 ms
+           gMTEPS: 151.541609
+---------- iteration: 6
+---------- iteration: 6, time: 12 ms
+           gMTEPS: 164.170078
+---------- iteration: 7
+---------- iteration: 7, time: 13 ms
+           gMTEPS: 151.541609
+---------- Average time: 13.375000 ms
+---------- file saved with line: 218048 with time 304 ms.
+---------- thread num: 96
+---------- iteration: 0
+---------- iteration: 0, time: 21 ms
+           gMTEPS: 93.811477
+---------- iteration: 1
+---------- iteration: 1, time: 13 ms
+           gMTEPS: 151.541609
+---------- iteration: 2
+---------- iteration: 2, time: 14 ms
+           gMTEPS: 140.717219
+---------- iteration: 3
+---------- iteration: 3, time: 14 ms
+           gMTEPS: 140.717219
+---------- iteration: 4
+---------- iteration: 4, time: 14 ms
+           gMTEPS: 140.717219
+---------- iteration: 5
+---------- iteration: 5, time: 16 ms
+           gMTEPS: 123.127562
+---------- iteration: 6
+---------- iteration: 6, time: 14 ms
+           gMTEPS: 140.717219
+---------- iteration: 7
+---------- iteration: 7, time: 13 ms
+           gMTEPS: 151.541609
+---------- Average time: 14.875000 ms
+---------- file saved with line: 218048 with time 305 ms.
+---------- thread num: 128
+---------- iteration: 0
+---------- iteration: 0, time: 54 ms
+           gMTEPS: 36.482242
+---------- iteration: 1
+---------- iteration: 1, time: 20 ms
+           gMTEPS: 98.502047
+---------- iteration: 2
+---------- iteration: 2, time: 20 ms
+           gMTEPS: 98.502047
+---------- iteration: 3
+---------- iteration: 3, time: 21 ms
+           gMTEPS: 93.811477
+---------- iteration: 4
+---------- iteration: 4, time: 20 ms
+           gMTEPS: 98.502047
+---------- iteration: 5
+---------- iteration: 5, time: 21 ms
+           gMTEPS: 93.811477
+---------- iteration: 6
+---------- iteration: 6, time: 20 ms
+           gMTEPS: 98.502047
+---------- iteration: 7
+---------- iteration: 7, time: 21 ms
+           gMTEPS: 93.811477
+---------- Average time: 24.625000 ms
+---------- file saved with line: 218048 with time 305 ms.

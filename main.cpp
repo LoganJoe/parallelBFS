@@ -37,13 +37,13 @@ int main(int argc, char *argv[]) {
 
 
     std::string line;
-    std::vector<Edge> edgelist;
+    std::vector <Edge> edgelist;
     printf("Starting to load edges...\n");
     int a, b, c;
     std::getline(infile, line, '\n');
     std::istringstream iss(line);
     iss >> a >> b >> c;
-    while(!infile.eof()) {
+    while (!infile.eof()) {
         std::getline(infile, line, '\n');
         std::istringstream iss(line);
         iss >> a >> b >> c;
@@ -54,7 +54,7 @@ int main(int argc, char *argv[]) {
     BFS bfs = BFS(graph, 16, 16);
 
     int test_thread_nums[] = {1, 2, 4, 8, 16, 24, 32, 48};
-    for (int thread_num : test_thread_nums) {
+    for (int thread_num: test_thread_nums) {
         printf("---------- thread num: %d\n", thread_num);
         omp_set_num_threads(thread_num);
         uint64_t time_0 = timeSinceEpochMillisec();
@@ -73,7 +73,7 @@ int main(int argc, char *argv[]) {
 
         }
         uint64_t time_3 = timeSinceEpochMillisec();
-        printf("---------- Average time: %f ms\n", (float)(time_3 - time_0) / (float)repeat_num);
+        printf("---------- Average time: %f ms\n", (float) (time_3 - time_0) / (float) repeat_num);
 
         int y = 0;
         std::ofstream out(outfile_dir + "_parallel_" + std::to_string(thread_num) + "_thread.out");

@@ -5,10 +5,10 @@
 #include "graph.h"
 
 
-Graph::Graph(std::vector<Edge> &edge) {
+Graph::Graph(std::vector <Edge> &edge) {
     Node num_node_ = 0;
 #pragma omp parallel for reduction(max: num_node_) default(none) shared(edge)
-    for (auto e : edge) {
+    for (auto e: edge) {
         num_node_ = std::max(num_node_, std::max(e.first, e.second));
     }
     num_node = num_node_ + 1;
@@ -16,8 +16,8 @@ Graph::Graph(std::vector<Edge> &edge) {
 
     list_u = new Node[num_edge];
     list_v = new Node[num_edge];
-    index_u = new Node*[num_node + 1];
-    index_v = new Node*[num_node + 1];
+    index_u = new Node *[num_node + 1];
+    index_v = new Node *[num_node + 1];
 
     Node *degree_u = new Node[num_node];
     Node *degree_v = new Node[num_node];
@@ -25,7 +25,7 @@ Graph::Graph(std::vector<Edge> &edge) {
     for (int i = 0; i < num_node; ++i) degree_u[i] = degree_v[i] = 0;
 
 #pragma omp parallel for default(none) shared(edge, degree_u, degree_v)
-    for (auto e : edge) {
+    for (auto e: edge) {
         __sync_fetch_and_add(&degree_u[e.first], 1);
         __sync_fetch_and_add(&degree_v[e.second], 1);
     }
@@ -45,7 +45,7 @@ Graph::Graph(std::vector<Edge> &edge) {
         index_v[i] = list_v + offset_v[i];
     }
 
-    for (auto e : edge) {
+    for (auto e: edge) {
         list_u[__sync_fetch_and_add(&offset_u[e.first], 1)] = e.second;
         list_v[__sync_fetch_and_add(&offset_v[e.second], 1)] = e.first;
     }

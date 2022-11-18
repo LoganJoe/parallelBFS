@@ -65,7 +65,7 @@ int BFS::bfsNaiive(Node root) {
     while (!q.empty()) {
         int u = q.front();
         q.pop();
-        for (Node* i = graph.get_index_u(u); i < graph.get_index_u(u + 1); ++i) {
+        for (Node *i = graph.get_index_u(u); i < graph.get_index_u(u + 1); ++i) {
             Node v = *i;
             if (distance[v] == -1) {
                 distance[v] = distance[u] + 1;
@@ -137,7 +137,7 @@ int BFS::bfsParallel(Node root) {
     int outnum = graph.get_out_degree(root);
     int step = 0;
 
-    while(!queue->empty()) {
+    while (!queue->empty()) {
         if (outnum > edge_unvisited / alpha) {
             queueToBitmap(queue, prev);
             int prm, rm = queue->size();

@@ -49,7 +49,7 @@ int SlidingQueue::size() {
     return tail - head;
 }
 
-BufferredQueue::BufferredQueue(SlidingQueue &master_, int size_): master(master_) {
+BufferredQueue::BufferredQueue(SlidingQueue &master_, int size_) : master(master_) {
     size = size_;
     tail = 0;
     lq = new Node[size];

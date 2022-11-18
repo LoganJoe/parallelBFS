@@ -26,7 +26,7 @@ Bitmap::Bitmap() {
 }
 
 Bitmap::~Bitmap() {
-    delete [] bitset;
+    delete[] bitset;
 }
 
 void Bitmap::reset() {
