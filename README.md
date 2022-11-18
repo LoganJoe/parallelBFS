@@ -2,7 +2,17 @@
 
 Hongyang Lin, 2020533180
 
-The parallel tested in AMD EPYC 7742 64-Core Processor @ 3246MHz (64 Cores / 64 Threads) * 2, 1TB ECC memory, Ubuntu 20.04.3 5.15.0-52-generic, building with gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1), cmake version 3.16.3, -O3 optimization.
+### Configuration 
+
+The benchmark tested on the following machine:
+
+- Supermicro AS-4124GS-TNR
+- AMD EPYC 7742 64-Core Processor @ 3.2GHz (64 Cores / 64 Threads) * 2
+- 1TB ECC memory
+- Ubuntu 20.04.3 5.15.0-52-generic
+- building with gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1)
+- cmake version 3.16.3
+- -O3 optimization.
 
 ### How to run
 run the following command to compile the program:
@@ -32,6 +42,10 @@ The code can be found in `src/bfs.cpp`.
 
 ### Optimization
 
+#### Atomic operation
+
+I For data that needs to be accessed simultaneously, atomic operations can avoid the performance overhead of locking. I therefore use a large number of atomic operations to reduce overhead. like`__sync_bool_compare_and_swap`, `__sync_fetch_and_add` and `__sync_bool_compare_and_swap`.  To be menctioned that some atomic operation need to introduce a refercnce instead of a pointer. Which can be referneced in https://gcc.gnu.org/onlinedocs/gcc/_005f_005fsync-Builtins.html. 
+
 #### Bitmap 
 To store a visited[] in bottom-up bfs, we need a structure to store it efficiently. following the implementation in https://github.com/sbeamer/gapbs, I develop an atomic bitmap to check whether the node are visited or not. The core code should be like this:
 ```c++
@@ -52,8 +66,20 @@ To get better performance, In the top-down approach, we can directly access the 
 #### BufferQueue
 As multiple thread write the queue at a same time will cause a worse performance, I introducted the buffer of each thread, that will temporily store the data in their own buffer. It will flush the buffer and write the data into the main queue if the scan finished or the buffer is full. Everytime we directly copy the buffer into the queue, which will significantly reduce the junk of the queue push operation. The code can be found in `src/queue.cpp`.
 
-### Testing method
+A heuristic can be used to switch between bottom-up and top-down bfs to achieve the best of both worlds. We follow the authors' suggestion on parameter tuning.  Note some of the results might be inaccurate, since the graphs may be directed and the heuristic method will have the different result about the parents.
+
+### Problem
+
+I also test the serval algorithms of parallel BFS program. I benefit much in the open source repo https://github.com/onesuper/bfs_in_parallel. One optimization is to get less lock makes competition more fierce, and since the platform we configured have two sockets and totally 8 NUMA, too severe fierce may cause too severe traffic in the crosslink bus, and higher latency may reduce the performance.
+
+More I referenced the https://github.com/orancanoren/GPU-CPU-Parallel-Graph-Algorithms.
+
+And we found that the current algorithm still have much overhead in the small scale data. Like we shown below, web-Stanford will have worst acclerate rate.
+
+### Benchmark method
 I test our algorithm with the thread {1, 2, 4, 8, 16, 24, 32, 48, 64, 96, 128}. Every case should run in multiple times to avoid errors. The raw result will be placed in the `./output` directory.
+
+
 
 
 
