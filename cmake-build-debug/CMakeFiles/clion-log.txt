@@ -1,0 +1,4 @@
+"/Users/logan/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.3345.126/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -S /Users/logan/CLionProjects/parallelBFS -B /Users/logan/CLionProjects/parallelBFS/cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/logan/CLionProjects/parallelBFS/cmake-build-debug
